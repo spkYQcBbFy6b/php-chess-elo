@@ -2,7 +2,7 @@
 
 function FN_calcELO($elo1, $elo2, $result, $k=20)
 {
- $newELO1 = round($elo1 + $k * ( $result - (1 / ( 1 + pow(10, ($elo22 - $elo1)/400) )) ));
+ $newELO1 = round($elo1 + $k * ( $result - (1 / ( 1 + pow(10, ($elo2 - $elo1)/400) )) ));
  $newELO2 = $elo2 + ($elo1 - $newELO1);
  return(array($newELO1, $newELO2);
 }
